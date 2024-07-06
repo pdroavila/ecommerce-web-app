@@ -2,13 +2,20 @@
 
 Projeto frontend desenvolvido para consumir backend desenvolvido para a cadeira de Serviços Web.
 
-## Instalar dependencias
+1. **Instalar dependencias**
 
 ```sh
 npm install
 ```
 
-### Compilar o projeto para ambiente de desenvolvimento
+2. **Configurar URL da API**
+  Para fins didáticos, foi dispobilizado o arquivo "env", que pode ser renomeado para ".env".
+
+  ```bash
+  mv env .env
+  ```
+
+3. **Compilar o projeto para ambiente de desenvolvimento**
 
 ```sh
 npm run dev
