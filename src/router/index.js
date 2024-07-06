@@ -52,7 +52,7 @@ router.beforeEach(async (to, from, next) => {
 
   if (to.name !== "login") {
     try {
-      const response = await fetch('http://localhost:3000/api/usuarios/buscar/hash', {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/usuarios/buscar/hash`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${authUser}`},
       });

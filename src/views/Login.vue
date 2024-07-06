@@ -45,7 +45,7 @@ import { useToast } from 'vue-toastification'
           senha: this.form.password
         };
 
-        let response = await fetch('http://localhost:3000/api/usuarios/buscar', {
+        let response = await fetch(`${import.meta.env.VITE_API_URL}/api/usuarios/buscar`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

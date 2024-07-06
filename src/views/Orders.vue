@@ -52,7 +52,7 @@
   const authUser = localStorage.getItem('authUser');
 
   onMounted(async () => {
-      const response = await fetch(`http://localhost:3000/api/pedidos/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/pedidos/`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -67,7 +67,7 @@
           var products = [];
 
           const productPromises = produtos.map(async(produto) => {
-            const response = await fetch(`http://localhost:3000/api/produtos/${produto}`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/produtos/${produto}`, {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json'

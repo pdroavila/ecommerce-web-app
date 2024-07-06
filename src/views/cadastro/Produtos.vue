@@ -48,7 +48,7 @@
           "descricao": this.form.descricao
         }
         
-        let response = await fetch('http://localhost:3000/api/produtos', {
+        let response = await fetch(`${import.meta.env.VITE_API_URL}/api/produtos`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

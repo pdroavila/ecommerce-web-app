@@ -76,7 +76,7 @@ onMounted(async () => {
   productId.value = route.params.id;
   
   try {
-    const response = await fetch(`http://localhost:3000/api/produtos/${productId.value}`, {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/produtos/${productId.value}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

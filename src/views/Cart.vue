@@ -68,7 +68,7 @@
   onMounted(async () => {
     const fetchPromises = cartItems.map(async (item) => {
       try {
-        const response = await fetch(`http://localhost:3000/api/produtos/${item}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/produtos/${item}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -100,7 +100,7 @@
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/api/pedidos`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/pedidos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

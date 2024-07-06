@@ -37,7 +37,7 @@
     const isAdminValue = localStorage.getItem('isAdm');
     isAdmin.value = isAdminValue ? JSON.parse(isAdminValue) : false;
     
-    let response = await fetch('http://localhost:3000/api/produtos', {
+    let response = await fetch(`${import.meta.env.VITE_API_URL}/api/produtos`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
