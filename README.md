@@ -31,4 +31,5 @@ npm run dev
 4. Em `/src/App.vue` temos o layout padrão com header, onde os componentes mencionados à cima serão carregados, e como mencionado, utilizamos do vue-router para fazer o roteamento.
 
 OBS: Utilizei da biblioteca "toast" para adicionar cards dinâmicos e também tailwind para estilização.
+
 OBS2: Conforme mencionado na documentação da API desenvolvida para serviços web, o login pode ser feito através do e-mail `teste@gmail.com` e senha `teste123`.
